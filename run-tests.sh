@@ -1,4 +1,4 @@
 #!/bin/sh
 
-export PYTHONPATH=$(pwd)/src
+export PYTHONPATH=$(pwd)/recipe_app
 exec ptw

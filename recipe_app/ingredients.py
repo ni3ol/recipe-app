@@ -21,6 +21,10 @@ def add_ingredient(ingredients, name, quantity, measurement):
 def delete_ingredient(ingredients, name):
     ingredients.pop(name, None)
 
+def use_ingredient(name, quantity, measurement):
+    # update ingredient and delete if depleted.
+    pass
+
 def edit_ingredient(ingredients, name, quantity, measurement):
     ingredients[name] = {'quantity': quantity, 'measurement': measurement}
 
@@ -36,7 +40,7 @@ def get_missing_ingredients(ingredients, recipe_ingredients):
                 'measurement': ingredient['measurement']
             }
         elif ingredient['quantity'] >= ingredients[ingredient]['quantity']:
-            # Add quantity difference to missing_ingredients
+            # TODO Add quantity difference to missing_ingredients
             missing_ingredients[ingredient] = {
                 'quantity': ingredient['quantity'],
                 'measurement': ingredient['measurement']
