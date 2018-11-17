@@ -37,7 +37,7 @@ class RecipeBook(object):
         self.recipes = recipes
             
     def create_recipe(self, name, ingredients, instructions):
-        pass
+        self.recipes[name] = ingredients
         
     def view_recipes(self):
         return self.recipes
