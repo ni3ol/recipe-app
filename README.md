@@ -1,4 +1,4 @@
-# Instructions
+# Specification
 
 ## Recipes
 
@@ -16,6 +16,11 @@
 - Ingredients can belong to a recipe and have a quantity and measurement.
 - I can see what ingredients we have in the pantry/fridge.
 - I can see what ingredients we are missing to make a specific meal.
+
+## Querying Recipes
+
+- I can see all the meals we can make with the ingredients in the house
+- I can query a specific meal and see whether we can make it (and if not, what we are missing).
 
 ## Shopping
 
