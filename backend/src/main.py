@@ -1,6 +1,7 @@
 from recipe_book import RecipeBook
 from recipe import Recipe
 
+
 def main():
     recipe_name = input('Recipe Name: ')
     recipe = Recipe(name=recipe_name)
@@ -18,6 +19,7 @@ def main():
     recipe_book = RecipeBook()
     recipe_book.add_recipe_to_recipe_book(recipe.build_recipe())
     print('Recipe Book: ', recipe_book.view_recipes())
+
 
 if __name__ == '__main__':
     main()

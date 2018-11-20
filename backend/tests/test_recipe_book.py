@@ -1,4 +1,3 @@
-import pytest
 import unittest
 
 
@@ -22,10 +21,11 @@ recipe_book = {
     }
 }
 
-class TestRecipeBook(unittest.TestCase):            
+
+class TestRecipeBook(unittest.TestCase):
     def test_create_recipe_adds_a_new_recipe_to_recipe_book(self):
         pass
-        
+
     def test_view_recipes_returns_all_recipes(self):
         pass
 

@@ -15,21 +15,27 @@ ingredients = {
     'pasta_sauce': {'quantity': 200, 'measurement': 'ml'},
 }
 
+
 def add_ingredient(ingredients, name, quantity, measurement):
     ingredients[name] = {'quantity': quantity, 'measurement': measurement}
 
+
 def delete_ingredient(ingredients, name):
     ingredients.pop(name, None)
+
 
 def use_ingredient(name, quantity, measurement):
     # update ingredient and delete if depleted.
     pass
 
+
 def edit_ingredient(ingredients, name, quantity, measurement):
     ingredients[name] = {'quantity': quantity, 'measurement': measurement}
 
+
 def get_ingredients(ingredients):
     return ingredients
+
 
 def get_missing_ingredients(ingredients, recipe_ingredients):
     missing_ingredients = {}

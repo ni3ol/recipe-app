@@ -18,5 +18,9 @@ class Recipe(object):
         self.instructions.append(instruction)
 
     def build_recipe(self):
-        recipe = {'recipe_name': self.name, 'ingredients': self.ingredients, 'instructions': self.instructions}
+        recipe = {
+            'recipe_name': self.name,
+            'ingredients': self.ingredients,
+            'instructions': self.instructions
+        }
         return recipe
