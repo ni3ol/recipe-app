@@ -1,27 +1,32 @@
 import unittest
 
 
-recipe_book = {
-    'Butternut soup': {
-        'ingredients': {
-            'butternut': {
-                'quanitity': 200,
-                'measurement': 'g'
+recipe_book = [
+    {
+        'slug': 'butternut_soup',
+        'name': 'Butternut soup',
+        'ingredients': [
+            {
+                'name': 'butternut',
+                'quantity': '400',
+                'measurement': 'grams'
             },
-            'coconut_milk': {
-                'quantity': 330,
-                'measurement': 'ml'
+            {
+                'name': 'cream',
+                'quantity': '250',
+                'measurement': 'milligrams'
             }
-        },
+        ],
         'instructions': [
             'Cut up the butternut into chunks.',
-            'Boil water and add butternut until soft',
-            'Add coconut milk'
-        ]
+            'Boil water and add butternut until soft.',
+            'Add coconut milk.'
+        ],
     }
-}
+]
 
 
+# TODO: Tests need renaming (CRUD)
 class TestRecipeBook(unittest.TestCase):
     def test_create_recipe_adds_a_new_recipe_to_recipe_book(self):
         pass

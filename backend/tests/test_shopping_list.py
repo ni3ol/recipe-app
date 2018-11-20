@@ -1,21 +1,36 @@
 import unittest
 
 
-shopping_list = {
-    'name': 'Woolies',
-    'ingredients': {
-        'chocolate': {
-            'quantity': 200,
-            'measurement': 'g'
-        },
-        'orange_juice': {
-            'quantity': 500,
-            'measurement': 'ml'
-        }
-    }
-}
+shopping_list = [
+    {
+        'slug': 'woolworths',
+        'name': 'Woolworths Shopping List',
+        'ingredients': [
+            {
+                'slug': 'lindt_chocolate',
+                'name': 'Lindt chocolate',
+                'quantity': 200,
+                'measurement': 'g',
+            },
+            {
+                'slug': 'orange_juice',
+                'name': 'Freshly Squeezed Orange Juice',
+                'quantity': 500,
+                'measurement': 'ml',
+            },
+            {
+                'slug': 'lettuce',
+                'name': 'Butter Lettuce',
+                'quantity': 200,
+                'measurement': 'g',
+            },
+        ]
+
+    },
+]
 
 
+# TODO: Tests need renaming (CRUD)
 class TestShoppingList(unittest.TestCase):
     def test_get_shopping_list_returns_the_items_for_a_specific_recipe(self):
         pass

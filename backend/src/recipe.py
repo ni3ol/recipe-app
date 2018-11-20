@@ -1,26 +1,31 @@
+from collections import namedtuple
+
+
 class Recipe(object):
     def __init__(self, name):
         self.name = name
         self.ingredients = []
         self.instructions = []
 
-    def build_ingredient(self, name, quantity, measurement):
-        return {
-            'name': name,
-            'quantity': quantity,
-            'measurement': measurement
-        }
+    # TODO: Figure out if this should be static or private
+    # If the build_ingredient function is only used by the Recipe class
+    # it must be private and start with an underscore _build_igredient()
+    @staticmethod
+    def create_ingredient(self, name, quantity, measurement):
+        Ingredient = namedtuple(
+            'Ingredent', ['name', 'quantity', 'measurement']
+        )
+        ingredient = Ingredient(name, quantity, measurement)
+        return ingredient
 
-    def add_ingredient_to_recipe_ingredients(self, ingredient):
+    def update_recipe_ingredients(self, ingredient):
         self.ingredients.append(ingredient)
 
-    def add_instruction_to_recipe_instructions(self, instruction):
+    def update_recipe_instructions(self, instruction):
         self.instructions.append(instruction)
 
-    def build_recipe(self):
-        recipe = {
-            'recipe_name': self.name,
-            'ingredients': self.ingredients,
-            'instructions': self.instructions
-        }
+    def create_recipe(self):
+        Recipe = namedtuple('Recipe', ['name', 'ingredients', 'instructions'])
+        recipe = Recipe(self.name, self.ingredients, self.instructions)
+
         return recipe

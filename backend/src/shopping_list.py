@@ -1,12 +1,15 @@
-def get_shopping_list(recipe):
+# TODO: Create generic food list
+
+
+def retrieve_shopping_list(recipe):
     pass
 
 
-def add_item_to_shopping_list(ingredient, quantity, measurement):
+def update_item_to_shopping_list(ingredient, quantity, measurement):
     pass
 
 
-def edit_shopping_list(shopping_list):
+def update_shopping_list(shopping_list):
     pass
 
 

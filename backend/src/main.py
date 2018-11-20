@@ -2,6 +2,7 @@ from recipe_book import RecipeBook
 from recipe import Recipe
 
 
+# TODO: Use Click
 def main():
     recipe_name = input('Recipe Name: ')
     recipe = Recipe(name=recipe_name)

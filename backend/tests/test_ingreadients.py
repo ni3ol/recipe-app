@@ -1,15 +1,16 @@
 import unittest
 
 
-ingredients = {
-    'flour': {'quantity': 1, 'measurement': 'kg'},
-    'sugar': {'quantity': 500, 'measurement': 'g'},
-    'pasta': {'quantity': 400, 'measurement': 'g'},
-    'milk': {'quantity': 1, 'measurement': 'l'},
-    'pasta_sauce': {'quantity': 200, 'measurement': 'ml'},
-}
+ingredients = [
+    {'name': 'flour', 'quantity': 1, 'measurement': 'kg'},
+    {'name': 'sugar', 'quantity': 500, 'measurement': 'g'},
+    {'name': 'pasta', 'quantity': 400, 'measurement': 'g'},
+    {'name': 'milk', 'quantity': 1, 'measurement': 'l'},
+    {'name': 'pasta_sauce', 'quantity': 200, 'measurement': 'ml'},
+]
 
 
+# TODO: Tests need renaming (CRUD)
 class TestIngredients(unittest.TestCase):
     def test_add_ingredient_adds_an_ingredient_to_available_ingredients(self):
         pass
