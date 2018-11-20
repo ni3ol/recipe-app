@@ -3,14 +3,14 @@
 New lines at end of file. Spaces after hashes Check with Flake8.
 
 Consider second datastructure over first.
-```ingredients = {
+ingredients = {
   'flour': {...},
 }
 vs
 
 ingredients = [
 { name: 'flour', ...}
-]```
+]
 
 Don't get confused between imperative and functional programming.
 In an imperative style you accept the ingredients list as an argument, and modify that list of ingredients.
@@ -34,10 +34,10 @@ Then you can build ingredients without making a 'dummy recipe' just to throw it 
 One reason to not do this, is if the build_ingredient function is only used by the Recipe class, but then it must be private and start with an underscore _build_igredient()
 
 Use namedtuples over dicts where there is a shape
-```Ingredient = namedtuple('Ingredent', ['name', 'quantity', 'measurement'])
+Ingredient = namedtuple('Ingredent', ['name', 'quantity', 'measurement'])
 
 flour = Ingredient('flour', 60, 'g')
 
-print(flour.name, flour.quantity, flour.measurement)```
+print(flour.name, flour.quantity, flour.measurement)
 
 Use CRUD in naming
