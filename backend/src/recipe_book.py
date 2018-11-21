@@ -28,10 +28,10 @@ class RecipeBook(object):
         self.recipes = recipes
 
     def create_recipe_in_recipe_book(self, recipe):
-        if recipe['recipe_name'] not in self.recipes:
-            self.recipes[recipe['recipe_name']] = {
-                'ingredients': recipe['ingredients'],
-                'instructions': recipe['instructions']
+        if recipe.name not in self.recipes:
+            self.recipes[recipe.name] = {
+                'ingredients': recipe.ingredients,
+                'instructions': recipe.instructions
             }
 
     def retrieve_recipes(self):

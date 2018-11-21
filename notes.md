@@ -41,3 +41,5 @@ flour = Ingredient('flour', 60, 'g')
 print(flour.name, flour.quantity, flour.measurement)
 
 Use CRUD in naming
+
+https://github.com/HubSpot/humanize for mesurement representations

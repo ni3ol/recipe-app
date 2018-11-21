@@ -11,7 +11,7 @@ class Recipe(object):
     # If the build_ingredient function is only used by the Recipe class
     # it must be private and start with an underscore _build_igredient()
     @staticmethod
-    def create_ingredient(self, name, quantity, measurement):
+    def create_ingredient(name, quantity, measurement):
         Ingredient = namedtuple(
             'Ingredent', ['name', 'quantity', 'measurement']
         )
@@ -27,5 +27,4 @@ class Recipe(object):
     def create_recipe(self):
         Recipe = namedtuple('Recipe', ['name', 'ingredients', 'instructions'])
         recipe = Recipe(self.name, self.ingredients, self.instructions)
-
         return recipe
